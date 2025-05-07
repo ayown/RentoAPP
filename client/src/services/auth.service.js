@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import axios from 'axios';
 import { useEffect } from 'react';
 import { useState } from 'react';
@@ -25,6 +26,7 @@ api.interceptors.request.use(
         return Promise.reject(error);
     }
 );
+
 
 const useFetch = (url,options={}) =>{
     const {
